@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 /* Componente padre */
 import App from './App';
 /* Estilos */
-import './index.css'
+import './css/index.css'
 
 
 /* Obtenemos el contenedor principal en donde vamos a renderizar nuestra 

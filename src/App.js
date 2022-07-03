@@ -4,7 +4,7 @@
 /* REact libraries */
 import React, {useState} from 'react';
 /* react styles */
-import './App.css'
+import './css/App.css'
 
 
 const App = ()=>{
@@ -12,22 +12,30 @@ const App = ()=>{
   const [increment, setInc] = useState(1);
   return(
     <div className="App">
-      <div class="carta">
+      <h1>React counter</h1>
+      <div class="main">
+    
         <div class="cont">
-          <h1>Contador</h1>
-          <h2>{count}</h2>
-          <button onClick={()=>setCount(count+increment)}>Suma</button>
-          <button onClick={()=>setCount(count-increment)}>Resta</button>
-          <button onClick={()=>setCount(0)}>Reset</button>
+          <h2>Counter</h2>
+          <h3>{count}</h3>
+          <div class="btn-group">
+            <button class="suma" onClick={()=>setCount(count+increment)}>Add</button>
+            <button class="resta" onClick={()=>setCount(count-increment)}>Less</button>
+            <button class="clear" onClick={()=>setCount(0)}>Reset</button>
+          </div>
+          
         </div>
         
         <div class="inc">
-          <h1>Incremento</h1>
-          <h2>{increment}</h2>
-          <button onClick={()=>setInc(increment +1)}>Suma</button>
-          <button onClick={()=>setInc(increment - 1)}>Resta</button>
-          <button onClick={()=>setInc(0)}>Reset</button>
+          <h2>Increment</h2>
+          <h3>{increment}</h3>
+          <div class="btn-group">
+            <button class="suma" onClick={()=>setInc(increment +1)}>Add</button>
+            <button class="resta" onClick={()=>setInc(increment - 1)}>Less</button>
+            <button class="clear" onClick={()=>setInc(1)}>Reset</button>
+          </div>
         </div>
+
       </div>
     </div>
   );
